@@ -7,32 +7,43 @@
 		height: 300px;
 		background-image:url(https://static.wikia.nocookie.net/universe-of-smash-bros-lawl/images/0/00/Popeye_the_Sailor.png/revision/latest?cb=20210821133300);
 		background-size: contain;
+		border:10px solid forestgreen;
 		background-repeat: no-repeat;
 		animation-name:spinach;
-		animation-iteration-count: infinite;
+		animation-duration: 5s;
+		animation-iteration-count:infinite;
 		
 
 	}
 @keyframes spinach{
-0%{
-	width:300px;
-	height:300px;
-}
 
-50%{ 
-width:100px;
-height:400px;
-border-radius:50%;
-transform:rotate(360deg);}
+			0%{
+				width:100px;
+				height:100px;
+				left:0px;
 
-100%{
+			}
 
-	width:300px;
-	height:300px;
-	border-radius:50%;
-	left:0px;
-}
+			50%{
+				width:300px;
+				height:300px;
+				border-radius:50%;
+				transform:rotate(190deg);
+				background-color:darkturquoise;
+				border:20px solid slateblue;
+				left:500px;
+				background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSio5crsV79T8xfyIfQp8lc3njXqc6awzcjTg&usqp=CAU);
 
+			}
+
+			100%{
+				width:100px;
+			height:100px;
+			left:0px;
+			background-image: url(https://pbs.twimg.com/profile_images/1665568645433442304/rBXc2Djo_400x400.png);
+
+			}
+		}
 }
 </style>
 </head>
