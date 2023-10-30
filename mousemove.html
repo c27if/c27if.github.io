@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style type="text/css">
+	
+#whale{
+
+	height:400px;
+	width: 400px;
+	background-image: url(https://www.huckmag.com/_next/image?url=https%3A%2F%2Fwww.tcocdn.com%2Ftco%2Fimages%2FHuck%2F01_V1_HUCK_NIHILISM.jpg%3F05-05&w=3840&q=75);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+</style>
+
+</head>
+<body>
+
+	<div id="whale">
+		
+
+	</div>
+<script type="text/javascript">
+	document.addEventListener("mousemove", function(event){
+whale.style.left = event.clientX -200+ "px";
+whale.style.top = event.clientY -100+ "px";
+console.log(event.clientX, event.clientY)
+	})
+
+
+</script>
+</body>
+</html>

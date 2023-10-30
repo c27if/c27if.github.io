@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+body{
+
+	background-image: url(https://pbs.twimg.com/media/EMOgJOwWwAAy5JA.png:large);
+	background-size: 100%;
+}
+
+#whale{
+
+	background-image: url(https://i.pinimg.com/originals/a3/e9/89/a3e989d438da3c75ad915e6fae8d1b99.png);
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top:60%;
+	transform: rotateY(180deg);
+
+}
+
+#fish{
+
+	background-image: url(https://i.pinimg.com/originals/28/bc/44/28bc44b5eed41b8a0b7829231bd684ad.gif);
+	height: 200px;
+	width: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 70%;
+	left:80%;
+	transform: rotateY(180deg);
+}
+
+
+	</style>
+</head>
+<body>
+
+	<h1>Click before using!</h1>
+	<audio src="explosion.mp3" id="loudSound"></audio>
+	<audio src="confetti.mp3" id="whaleDie"></audio>
+<div id="whale"></div>
+
+<div id="fish"></div>
+
+<script type="text/javascript">
+	document.addEventListener("mousemove", function(event){
+whale.style.left = event.clientX -100+ "px";
+whale.style.top = event.clientY -100+ "px";
+console.log(event.clientX, event.clientY)
+
+if (event.clientY<500) {
+	whale.style.backgroundImage = "url(https://i.pinimg.com/originals/d8/71/44/d87144f81ac17ad2ccb567ccece776f3.gif)"
+	whaleDie.play()
+
+}
+
+if (event.clientY>500) {
+	whale.style.backgroundImage = "url(https://i.pinimg.com/originals/a3/e9/89/a3e989d438da3c75ad915e6fae8d1b99.png)"
+	whaleDie.pause()
+}
+	})
+
+
+	fish.addEventListener("mouseenter", function(){
+		loudSound.play()
+		fish.style.backgroundImage = "url(https://i.pinimg.com/originals/51/f7/0a/51f70ae781330145e5fb5aa581b14b91.gif)"
+
+	})
+
+	fish.addEventListener("mouseout", function(){
+		loudSound.pause()
+fish.style.backgroundImage = "url(https://i.pinimg.com/originals/28/bc/44/28bc44b5eed41b8a0b7829231bd684ad.gif)"
+		
+	})
+</script>
+</body>
+</html>
