@@ -12,8 +12,8 @@ body{
 #whale{
 
 	background-image: url(https://i.pinimg.com/originals/a3/e9/89/a3e989d438da3c75ad915e6fae8d1b99.png);
-	height: 200px;
-	width: 200px;
+	height: 400px;
+	width: 400px;
 	position: absolute;
 	top:60%;
 	transform: rotateY(180deg);
@@ -49,8 +49,8 @@ body{
 
 <script type="text/javascript">
 	document.addEventListener("mousemove", function(event){
-whale.style.left = event.clientX -100+ "px";
-whale.style.top = event.clientY -100+ "px";
+whale.style.left = event.clientX -200+ "px";
+whale.style.top = event.clientY -200+ "px";
 console.log(event.clientX, event.clientY)
 
 if (event.clientY<500) {
