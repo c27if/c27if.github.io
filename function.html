@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+
+<script type="text/javascript">
+	
+// this is how we define the recipe for a function
+	// 1. make a div
+	// 2. put div in body
+	// 3. style div
+function chillsMultiplying() {
+var chills = document.createElement("div")
+document.body.appendChild(chills)
+chills.style.width = "200px"
+chills.style.height = "200px"
+chills.style.backgroundImage = "url(https://www.keckmedicine.org/wp-content/uploads/2021/11/A-woman-has-the-chills.jpg)";
+chills.style.backgroundSize = "contain"
+chills.style.backgroundRepeat = "no-repeat"
+chills.style.display = "inline-block"
+
+chills.addEventListener("click", function(){
+	chills.style.opacity = "0";})
+
+
+}
+
+// we actually bake it by saying its name and this (below) makes it appear at intervals of 1000 milliseconds, or 1 second
+
+setInterval(chillsMultiplying, 1000)
+
+
+
+</script>
+
+
+</body>
+</html>
