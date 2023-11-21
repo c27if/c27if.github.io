@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monofett&family=Nunito&family=Roboto:wght@100;500&family=Wavefont&display=swap" rel="stylesheet">
+<style type="text/css">
+	
+body{
+
+	background-image: url(https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/36142/article_full%401x.jpg);
+	background-size: 100%;}
+
+h1{
+	font-family: nunito;
+	color: lightgoldenrodyellow;
+
+}
+
+
+</style>
+
+</head>
+<body>
+
+	<h1>Click to see things/people I'm grateful for!
+	</h1>
+	<audio src="clapping.mp3" id="clap"></audio>
+
+
+	<script type="text/javascript">
+function madBride() {
+var bride = document.createElement("div")
+document.body.appendChild(bride)
+bride.style.width = "400px"
+bride.style.height = "400px"
+bride.style.backgroundSize = "contain"
+bride.style.backgroundRepeat = "no-repeat"
+bride.style.display = "inline-block"
+bride.style.position = "absolute"
+bride.style.left = "35%"
+bride.style.top = "20%"
+
+
+var clickCounter = 0
+
+document.addEventListener("click", function(){
+
+	clickCounter = clickCounter + 1
+
+	if(clickCounter == 0){
+
+		bride.style.backgroundImage = "url(https://static01.nyt.com/images/2023/11/12/multimedia/12-Toulmouche-HesitantFiancee/12-Toulmouche-HesitantFiancee-superJumbo.jpg?quality=75&auto=webp)"
+	}
+	
+	if (clickCounter == 1) {
+
+		clap.play()
+
+		bride.style.backgroundImage = "url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoeKX6DVp7AeXD6j5_YFPGyXUyLYil-FEZ3ygnxD_eaHILkQN-)"
+	}
+
+	if (clickCounter == 2){
+
+		bride.style.backgroundImage = "url(https://d7hftxdivxxvm.cloudfront.net/?height=426&quality=80&resize_to=fit&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F3ZBQYFlN1NOZjkHP5kM3PA%2Flarge.jpg&width=640)"
+	}
+
+	if(clickCounter == 3){
+
+		bride.style.backgroundImage = "url(https://hips.hearstapps.com/hmg-prod/images/malala-yousafzai-attends-the-95th-annual-academy-awards-on-news-photo-1688139363.jpg?crop=0.889xw:1xh;center,top&resize=1200:*)"
+	}
+
+	if(clickCounter == 4){
+
+		bride.style.backgroundImage = "url(https://hips.hearstapps.com/hmg-prod/images/malala-yousafzai-attends-the-95th-annual-academy-awards-on-news-photo-1688139363.jpg?crop=0.889xw:1xh;center,top&resize=1200:*"
+	}
+
+	if(clickCounter == 5){
+
+		bride.style.backgroundImage = "url(https://cdn.britannica.com/83/130983-050-82EE4ECC/Michelle-Obama-portrait-first-lady-Blue-Room-2009.jpg"
+		bride.style.left = "40%"
+		bride.style.position = "absolute"
+	}
+
+	if(clickCounter == 6){
+
+		bride.style.backgroundImage = "url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMG3fsD7_y7sl6gFNp7s2LChzEZBZMUMhf3EgEa7bmlXVnG-IP)"
+		bride.style.position = "absolute"
+		bride.style.left = "35%"
+		bride.style.top = "25%"
+	}
+
+	if(clickCounter == 7){
+
+		bride.style.backgroundImage = "url(https://m.media-amazon.com/images/I/617j+TGPwDL._AC_UF1000,1000_QL80_.jpg)"
+		bride.style.position = "absolute"
+		bride.style.left = "40%"
+		bride.style.top = "25%"
+	}
+	if(clickCounter == 8){
+		bride.style.backgroundImage = "url(https://static01.nyt.com/images/2023/11/12/multimedia/12-Toulmouche-HesitantFiancee/12-Toulmouche-HesitantFiancee-superJumbo.jpg?quality=75&auto=webp)";
+	}
+
+	if(clickCounter == 8){
+		clickCounter = 0
+	}
+})
+	}
+
+
+document.addEventListener("mousemove", function(event){
+whale.style.left = event.clientX -200+ "px";
+whale.style.top = event.clientY -200+ "px";
+console.log(event.clientX, event.clientY)})
+	
+	madBride()	
+
+
+
+
+
+	</script>
+
+</body>
+</html>

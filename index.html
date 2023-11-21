@@ -8,44 +8,58 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Wavefont&display=swap" rel="stylesheet">
 	<style type="text/css">
+
+table{
+	width:100%;
+/*		border:2px solid white;*/
+
+}
+
+.box{
+/*	background-color:blue;*/
+	background-position:center;
+	background-size:cover;
+	height: 600px;
+
+}
+
+td{
+	width:24%;
+/*	border:2px solid white;*/
+}
 		
 #witch{
-width:500px;
-height: 400px;
+background-position:center;
+width:100%;
 background-image:url(https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FlsgZ-p0LytgZTdSe1noiSw%2Fnormalized.jpg&width=910);
 
-background-size: contain;
+background-size: cover;
 background-repeat: no-repeat;
-position: absolute;
-left:2%;
-top:45%;
+position: relative;
+/*left:2%;
+top:45%;*/
 
 
 }
 
 #journallink{
+		background-position:center;
 
-	width: 400px;
-	height: 400px;
+
+	width: 100%;
 	background-image: url(https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F3hdTsHXegJrCbbaJupBzQw%252FJohn_William_Waterhouse_-_Magic_Circle.jpeg&width=450);
-	background-size: contain;
 	background-repeat: no-repeat;
-	position: absolute;
-	left: 76%;
-	top: 45%;
+	position: relative;
+	/*left: 76%;
+	top: 45%;*/
 	}
 #aboutme{
 
-	width: 400px;
-	height: 400px;
 	background-image: url(https://i.guim.co.uk/img/media/1121ca2fbb8a3da4b31023228a8b325c7248f0c7/0_0_1498_2000/master/1498.jpg?width=700&quality=85&auto=format&fit=max&s=c718dd892acf186e897f69783e4da320);
-
-	background-size: contain;
-
 	background-repeat: no-repeat;
-	position:absolute;
-	left:37%;
-	top:45%;
+	position:relative;
+	/*left:37%;
+	top:45%;*/
 }
 
 #aboutme:hover{
@@ -64,18 +78,18 @@ transition: 5s;
 }
 
 h1{
-position: absolute;
-left:37%;
+position: relative;
+/*left:37%;*/
 
 
 }
 
-h3{
+#headingtest{
 
 	font-size: 90px;
-	position:absolute;
-	top:22.5%;
-	left:2%;
+	position:relative;
+/*	top:22.5%;*/
+/*	left:2%;*/
 
 }
 
@@ -83,8 +97,9 @@ h3{
 
 
 body{
-	font-family: 'Bebas Neue', sans-serif; color: navajowhite;
-	margin:0px;
+	font-family: 'Bebas Neue', sans-serif; 
+	color: navajowhite;
+	margin:10px;
 
 }
 
@@ -96,16 +111,30 @@ body{
 	background-size:cover;}
 
 h2{
-	position:absolute;
-	left:76%;
-	top:24.5%;
+	position:relative;
+	/*left:76%;
+	top:24.5%;*/
 	font-size: 90px;
 
 }
 
+.text{
+	text-align:center;
+	position:relative;
+	top:-100px;
+	font-size:90px;
+
+
+}
+
+a{
+	text-decoration:none;
+	color: navajowhite;
+}
+
 #desc{
 
-	position: absolute;
+/*	position: absolute;*/
 	left: 2%;
 	top: 5%;
 	font-size: 30px;
@@ -114,24 +143,23 @@ h2{
 
 #disclaimer{
 
-	position: absolute;
+/*	position: absolute;*/
 	left: 9%;
 	top: 26%;
 	background-color: lightcoral;
-	font-size: 20px;
+	font-size: 30px;
 	background-size: cover;
 
 }
 
 #herkind{
-
-	width: 350px;
-	height: 400px;
+	background-size:contain;
+	width: 100%;
+	height: 600px;
 	background-image: url(https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F212788f1-a30d-4f3b-b8be-8f9b54eb36cf_523x918.jpeg);
-	position: absolute;
+	/*position: absolute;
 	left: 59%;
-	top: 45%;
-	background-size: contain;
+	top: 45%;*/
 	background-repeat: no-repeat;
 
 }
@@ -141,32 +169,73 @@ h2{
 </head>
 <body>
 <div id="background">
+<center><h1> Welcome to the world's playground.</h1></center>
 
-<h1> Welcome to the world's playground.</h1>
-<a href="projects.html">
-<div id="witch">
-</div>
-</a>
-
-<h2 id="journalpage">Journal:</h2>
-<h3 id="project">Projects:</h3>
-<a href="journal.html">
-<div id=journallink>
-</div>
-</a>
-
-<a href="aboutme.html">
-<div id=aboutme> 
-</div>
-</a>
-</div>
-
+	<div>
 <p id="desc">The paintings below all symbolize the perception of women as either insane, deranged, or demonic. The witches representing the Journal and Projects pages are both a misrepresentation of female identity, demonizing either women working together or independently seemingly as plotting to destroy society. The painting in the middle depicts a woman driven to insanity. It is up to you to determine the cause: was it a woman with her humors unbalanced, the product of misogyny, or something far more sinister? 
 </p>
+
+</div>
+
+<div>
 <p id="disclaimer">
 	*disclaimer* I own none of the rights to these images and the above interpretation is simply that: an interpretation. I am sure many disagree with me on this idea, but I wanted to have my voice be heard despite others' dissent.
 </p>
+</div>
+<br><br>
+<br>
 
-<div id="herkind"></div>
+
+<center><table>
+	<tr>
+		<td>
+
+	<a href="projects.html">
+		<div class='box' id="witch">
+		<div class="text">Projects:</div>
+		</div>
+	</a>
+
+		</td>
+
+
+	<td>
+	
+	<a href="aboutme.html">
+		<div class='box' id=aboutme> 
+		</div>
+		</a>
+
+	</td>
+
+	<td>
+			<div class='box' id="herkind"></div>
+
+
+</td>
+
+
+<td>
+
+	<a href="journal.html">
+	<div class='box' id=journallink>
+	<div class="text">Journal:</div>
+	</div>
+		</a>
+
+	</td>
+	 </tr> <!--end of row -->
+
+
+</table></center>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
