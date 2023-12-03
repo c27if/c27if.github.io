@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style type="text/css">
+	.bball{
+
+		width: 400px;
+		height: 400px;
+		background-image: url(https://pictures.abebooks.com/inventory/10302096469.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		text-align: center;
+
+	}
+
+	#geb{
+		width: 400px;
+		height: 400px;
+		background-image: url(https://m.media-amazon.com/images/I/51zU0Zk9zLL._AC_UF1000,1000_QL80_.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+</style>
+</head>
+<body>
+		<audio src="explosion.mp3" id="loudSound"></audio>
+
+<div id="geb"></div>
+
+<center><h1>Can you read all of the pages in this book?</h1></center>
+
+
+<script type="text/javascript">
+	
+function dribble (input){
+
+var ball = document.createElement("div")
+document.body.appendChild(ball)
+ball.classList.add("bball")
+ball.style.display = "inline-block"
+ball.innerText = input
+ball.addEventListener("mouseenter", function(){
+
+	ball.style.opacity = "0"
+})
+
+}
+
+//how to convert HTML to JavaScript - IT IS REDUNDANT!
+	
+for (var counter = 1; counter<778; counter = counter + 1){
+	dribble(counter)
+
+	
+}
+
+if(counter == 3){
+
+		loudSound.play()}
+
+</script>
+</body>
+</html>
