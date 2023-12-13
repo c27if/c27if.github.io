@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style type="text/css">
+
+	div{
+		background-size:contain;
+		background-position: center;
+
+	}
+	
+.perish{
+height: 300px;
+width: 300px;
+display: inline-block;
+background-repeat: no-repeat;
+
+}
+
+#human1{
+background-image: url(human1.svg.png)
+}
+
+#human2{
+
+	background-image: url(human2.png)
+}
+
+#human3{
+
+background-image: url(human3.png)
+}
+
+#blackhole{
+
+background-image: url(https://static.wixstatic.com/media/b34289_0b00d544f6504279b491b36616f2efe5~mv2_d_2040_1360_s_2.jpg/v1/fill/w_640,h_426,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/b34289_0b00d544f6504279b491b36616f2efe5~mv2_d_2040_1360_s_2.jpg);
+width: 600px;
+height: 600px;
+background-repeat: no-repeat;
+border-radius: 50%;
+background-size: cover;
+}
+</style>
+</head>
+<body>
+<audio src="beepbeep.mp3" id="die"></audio>
+
+<div id="human1" class="perish"></div>
+<div id="human2" class="perish"></div>
+<div id="human3"class="perish"></div>
+
+<div id="blackhole"></div>
+
+<script type="text/javascript">
+
+
+var x;
+var y;
+var image;
+
+// document.addEventListener("mousemove", function(event){
+// 	x = event.clientX -150+ "px";
+// 	y = event.clientY -150+ "px";
+// 	console.log(x, y)
+
+
+// })
+
+blackhole.addEventListener("click", function makeDiv(event){
+
+	die.play()
+
+	var div = document.createElement("div");
+	document.body.appendChild(div);
+	div.style.width ="300px"
+	div.style.height ="300px"
+	div.style.left = event.clientX + "px"
+		div.style.top = event.clientY + "px"
+		div.style.position="absolute"
+		div.style.backgroundImage = "url("+image+")"
+		console.log(event)
+	div.style.backgroundSize = "contain"
+	div.style.backgroundRepeat = "no-repeat"
+
+})
+
+
+human1.addEventListener("click", function(){
+	image = "human1.svg.png"
+	human1.style.opacity = "0"
+})
+
+human2.addEventListener("click", function(){
+	image = "human2.png"
+	human2.style.opacity = "0"
+
+})
+
+human3.addEventListener("click", function(){
+	image = "human3.png"
+	human3.style.opacity = "0"
+})
+
+
+
+// 	human2.addEventListener("click", 
+// 		function(){
+// 			document.addEventListener("click", function(){
+// 				human2.style.position="absolute"
+// 				human2.style.left = x+'px'
+// 				human2.style.top = y+'px'
+// 			})
+
+// 			})
+
+// 		human3.addEventListener("click", 
+// 		function(){
+// 			document.addEventListener("click", function(){
+// 				human3.style.position="absolute"
+// 				human3.style.left = x+'px'
+// 				human3.style.top = y+'px'
+// 			})
+
+// 			})
+</script>
+
+</body>
+</html>
