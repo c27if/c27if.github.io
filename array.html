@@ -4,17 +4,38 @@
 
 <style type="text/css">
 
+#thing{
+
+font-size: 30px;
+}
+
+#frame{
+height: 400px;
+width: 400px;
+background-image: url(https://lh3.googleusercontent.com/proxy/mSa9CH-D2V3UrLwBuh7_94ZuCFL5DicKTftQC4rMzXxD8FCYIt5i8daPpwUCmj7ItNNjkgsWoKaPHRubqnemAqYuYC5ft1L9EwCBpM78vv58aHXNWcg);
+background-size: contain;
+background-repeat: no-repeat;
+z-index: -1;
+}
+
+#image{
+
+	height: 300px;
+	width: 295px;
+	background-size: contain;
+background-repeat: no-repeat;
+z-index: 1;
+position: relative;
+top: 15%;
+left: 0%;
+
+}
 </style>
 
 </head>
 <body>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+<center><h1>✒Click for a haiku.✒</h1></center>
 <br>
 <br>
 <br>
@@ -27,10 +48,15 @@
 <br>
 <br>
 	<center><div id="thing"></div></center>
+<br>
+<br>
+	<center><div id="frame"><div id="image"></div></div></center>
 
 <script type="text/javascript">
 
-var randomhaiku = ["obelisks grow by/the seaside but alas they/cannot find seashells","the petals of a/rose up to the heavens and/are now a pink cloud","The Spot from that show/Spider-Man doesn't have a/good sense of humor","weeded grass lillies/bend under the weight of my/inquiring toes", "water towers drip/with the promise of Mondays/becoming sweeter"]	
+var randomhaiku = ["obelisks grow by/the seaside but alas they/cannot find seashells","the petals of a/rose up to the heavens and/are now a pink cloud","The Spot from that show/Spider-Man doesn't have a/good sense of humor","weeded grass lillies/bend under the weight of my/inquiring toes", "water towers drip/with the promise of Mondays/becoming sweeter"]
+
+var photo = ["url(https://upload.wikimedia.org/wikipedia/commons/6/6d/Landscape_with_an_Obelisk%2C_Govaert_Flinck%2C_1638%2C_Isabella_Stewart_Gardner_Museum%2C_Boston.jpg)", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Rosa_Ingrid_Bergman_2018-07-16_6611_%28cropped%29.jpg/800px-Rosa_Ingrid_Bergman_2018-07-16_6611_%28cropped%29.jpg)", "url(https://static.wikia.nocookie.net/marveldatabase/images/1/12/Johnathon_Ohnn_%28Earth-616%29_and_Peter_Parker_%28Earth-616%29_from_Amazing_Spider-Man_Vol_1_589_002.jpg/revision/latest?cb=20210520030402)", "url(https://upload.wikimedia.org/wikipedia/commons/0/03/Ornithogalum_umbellatum_close-up2.jpg)", "url(https://gwarlingo.com/wp-content/uploads/2012/06/Tom-Fruin-Watertower-1-by-Robert-Banat.jpg)"]	
 
 
 document.addEventListener("click", function(){
@@ -38,6 +64,8 @@ document.addEventListener("click", function(){
 var x = Math.round(Math.random()*4);
 
 thing.innerText = randomhaiku[x]
+
+image.style.backgroundImage = photo[x]
 
 })
 
