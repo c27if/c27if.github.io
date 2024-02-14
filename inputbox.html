@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+	body{
+		margin:0px;
+	}
+
+	#background{
+		height:800px;
+		width: 100%;
+		background-image: url(https://variety.com/wp-content/uploads/2013/10/blade-runner-1982.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	#paragraph{
+	width: 900px;
+background-color: navajowhite;
+opacity: 50%;
+margin: 2px;
+	}
+
+	#question{
+		background-color: whitesmoke;
+opacity: 50%;
+margin: 2px;
+width: 500px;
+	}
+</style>
+</head>
+<body>
+<div id="background">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+
+<center>
+<div id="paragraph">
+It is I, the one and only. I am your creator, am I not? No... I don't mean your parent--I would never do such a heinous thing. I am your greater creator (look at that rhyme!), not quite at the deity level but close. You can call me your "dreamer" if you must assign a value to my being, but otherwise I am just a shadow. I follow you around (I always have) but you've gone to a place I cannot find. You've become something of an elusivivity, the only foil in my dream-like perfection. So now we meet, I presume, and I must find a way to secure your soul. No, don't be afraid. I've always been right around the corner.
+</div></center>
+<br>
+<br>
+<center><div id="question">Can you identify the source of one quote in my monologue? <input id="input"></input></div></center>
+
+<br>
+<br>
+<center>
+
+<button id="submit">I'm sure...</button></center>
+</div>
+<script type="text/javascript">
+	
+	submit.addEventListener("click", function(){
+console.log(input.value)
+if(input.value == "Frozen 2")
+	{alert("You've... you've done the thing I could never. I--I... I cannot understand how you broke out of the system that has trapped me into being nothing but a Dreamer. You could've become me but instead you've chosen to surpass my rank. Maybe I should call you my controller.")}
+
+if(input.value=="Clearly you're wrong")
+{alert("Nice try, but no! You found an egg, though, so for that I won't kill you.")}
+else
+{alert("It was not "  + input.value + ". I guess I was wrong... you're just a petty criminal.")
+	}})
+</script>
+</body>
+</html>

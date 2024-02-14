@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+#something{
+
+width: 150px;
+height: 150px;
+background-image: url(https://images.vexels.com/media/users/3/205556/isolated/preview/48a9032df3589d97d601e3a746becd57-ufo-alien-illustration.png);
+position: absolute;
+background-size: contain;
+background-repeat: no-repeat;
+}	
+
+</style>
+
+</head>
+<body>
+
+<div id="something"></div>
+
+<script type="text/javascript">
+
+	var x = 0;
+
+	var y = 0;
+	
+document.addEventListener("keydown", function(event){console.log(event.key)
+
+
+
+	if (event.key=="ArrowLeft") {
+
+		x=x-10
+
+		something.style.left = x+"px" 
+	}
+
+	if(event.key=="ArrowRight") {
+
+		x=x+10
+
+	something.style.left = x +'px'
+	}
+
+	if(event.key=="ArrowDown") {
+
+		y=y+10
+
+	something.style.top = y +'px'
+	}
+
+	if(event.key=="ArrowUp"){
+
+	y=y-10
+	something.style.top= y + "px"
+
+	}
+
+
+
+
+})
+
+</script>
+
+</body>
+</html>
