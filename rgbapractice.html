@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+
+			background-color: rgba(125, 50, 20, 1.0);
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	
+document.addEventListener("mousemove", function(event){
+
+var red = Math.random()*255;
+var blue = Math.random()*255;
+var green = Math.random()*255;
+var x = event.clientX
+var y = event.clientY
+console.log (x, y)
+// this is how connor is scaling the screen to fit into the coordinates of 255
+var xcoord = x/(window.innerWidth/255);
+var ycoord = y/(window.innerWidth/255);
+
+
+document.body.style.backgroundColor = "rgba(" + xcoord + "," +ycoord + "," + 0 + ", 1.0)";
+
+})
+
+</script>
+</body>
+</html>
