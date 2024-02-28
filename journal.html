@@ -196,7 +196,22 @@ position: absolute;
 	position: absolute;
 	left: 1%;
 	top: 176%;
+}
 
+h13{
+
+	position: absolute;
+	left: 2%;
+	top: 182%;
+	font-family: 'Monofett', monospace;
+	font-size: 50px;
+
+}
+
+#p16{
+	position: absolute;
+	left: 1%;
+	top: 187%;
 }
 
 </style>
@@ -277,6 +292,11 @@ Four questions about web design/color:
 2. How do you figure out what color scheme correlates with a website idea?
 3. What are some challenges you encounter while designing a website?
 4. What colors look aesthetically pleasing?
+</p>
+
+<h13>2/28/24</h13>
+<p id="p16">
+This journal entry is simply explaining the coding I've done over this quarter. I've already explained the taco/face/pizza code. For the array (haiku project), I created two variables, one of an image that would show up inside a picture frame (just a div) and the other of the actual haiku. For both of these, I created an array of possible images and haikus, and made sure the haiku was in the same spot in its array as the image in its spot (e.g numer 0 in the array or number 4 in the array). I used hard brackets so the code would know it was an array. Then I created another variable that would generate a random number, 0, 1, 2, 3, or 4 using Math.random (and then Math.round to make sure it was a whole number). Then, I added an event listener that changed the innertext of the haiku and the background image of the image div to correspond to the value associated with that number in the array. This happened on a click. For the slideshow, I coded it using the tips on reveal.js, so if you want to know how to make it yourself, I suggest going on that website. For my UFO/car project, I made the UFO move whenever an arrow key was pressed. To do this, I made two variables, x and y, which changed depending on wihch arrow key was pressed. For example, if you pressed the down key, the y value was increased by 10, which was then changed the UFO's style section and increased the "top" value by 10. Ironically, that makes the div move down on the page. Then I made an input project using if/then statements. This project will only accept one input as the "right" answer, and when anything else is inputted, it's coded to create an alert that tells the user that they're wrong. The rgba project logs event.clientX and event.clientY (the x and y coordinates of some element on the page, in this case the mouse), then divides that number by 255 (the width of a screen) to create an rgb value for that specific color. This value changes whenever the mouse is moved.
 </p>
 
 
