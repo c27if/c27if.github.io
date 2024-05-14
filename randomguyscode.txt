@@ -1,0 +1,38 @@
+	/*
+
+	other guy's code I stole
+
+	body{
+	margin:0px;
+	height: 100%;
+    padding: 0;
+}
+		*/
+/*#body{
+	
+	
+	background-image:url(https://i.redd.it/jtliukpes5w71.png);
+	height: 1000px;
+	width: 2200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	/*	object-fit: cover;*/*/
+	
+	/* more stolen code
+	padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;*/
+/*
+random guy's code I stole
+            margin: 0;
+            padding: 0;
+       
+            display: grid;
+            height: 100%;
+      
+  			center-fit
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;*/
